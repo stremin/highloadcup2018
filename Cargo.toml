@@ -1,0 +1,31 @@
+[package]
+name = "hlc2018"
+version = "0.1.0"
+authors = ["stem <stem@iname.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+env_logger = "0.6.0"
+zip = "0.5.0"
+serde = { version = "1.0.84", features = ["rc"] }
+serde_derive = "1.0.84"
+serde_json = "1.0.34"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+percent-encoding = "1.0.1"
+chrono = "0.4.6"
+enum-map = "0.4.1"
+chashmap = "2.2.0"
+mio = "0.6.16"
+spin = "0.5.0"
+clap = "2.32.0"
+net2 = "0.2.3"
+itertools = "0.8.0"
+rand ="0.6.4"
+libc = "0.2.47"
+nix = "0.13.0"
+
+[profile.release]
+debug = true
+codegen-units = 1
